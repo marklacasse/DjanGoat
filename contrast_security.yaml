@@ -1,0 +1,18 @@
+agent:
+  logger:
+    path: /proc/1/fd/1
+    level: INFO
+    progname: Contrast Agent
+  security_logger:
+    path: /proc/1/fd/1
+    level: ERROR
+  service: 
+    logger: 
+      path: /proc/1/fd/1
+      level: INFO
+    host: 127.0.0.1
+    port: 30555
+application:
+  path: /myapp
+
+

@@ -1,12 +1,12 @@
 .PHONY: install run lint test travis
-deafult: install
+default: install
 
 install:
 	pip install -r requirements.txt
 
 run:
 	python manage.py migrate
-	python manage.py runserver
+	python manage.py runserver 0.0.0.0:8000
 
 lint:
 	pylint app pygoat

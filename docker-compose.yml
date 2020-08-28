@@ -1,0 +1,13 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment: 
+      - CONTRAST__API__URL=https://app.contrastsecurity.com/Contrast
+      - CONTRAST__API__API_KEY={agent API KEY}
+      - CONTRAST__API__SERVICE_KEY={agent Service key}
+      - CONTRAST__API__USER_NAME={agent user name}
+      - CONTRAST__APPLICATION__NAME=DjanGoat
+      - CONTRAST__SERVER__NAME=Docker
