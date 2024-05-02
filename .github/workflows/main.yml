@@ -1,6 +1,7 @@
 name: Scan with local scanner
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - 'main'
