@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: read
+  checks: write
 
 jobs:
   scan:
@@ -23,5 +24,6 @@ jobs:
           apiOrgId: ${{ secrets.CONTRAST__API__ORGANIZATION }}
           resourceGroup: CICD
           severity: high
+          checks: true
     
 
