@@ -23,4 +23,4 @@ jobs:
           apiOrgId: ${{ secrets.CONTRAST__API__ORGANIZATION }}
           resourceGroup: CICD
           checks: true
-          severity: high
+
