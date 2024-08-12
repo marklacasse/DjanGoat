@@ -23,7 +23,7 @@ jobs:
           apiServiceKey: ${{ secrets.CONTRAST__API__SERVICE_KEY }}
           apiOrgId: ${{ secrets.CONTRAST__API__ORGANIZATION }}
           #resourceGroup: CICD
-          projectName: GithubA-DjanGoat
+          projectName: GithubA-DjanGoat2
           checks: true
 
 
