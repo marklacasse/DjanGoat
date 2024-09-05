@@ -23,7 +23,7 @@ jobs:
           apiServiceKey: ${{ secrets.CONTRAST__API__SERVICE_KEY }}
           apiOrgId: ${{ secrets.CONTRAST__API__ORGANIZATION }}
           resourceGroup: CICD
-          projectName: Testing spaces here
+          projectName: GithubA-DjanGoat2
           checks: false
           label: Github Action Scan (testing-test / DEV-569)
           severity: low
