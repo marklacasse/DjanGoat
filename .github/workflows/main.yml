@@ -8,7 +8,7 @@ on:
   workflow_run:
       workflows: [Contrast Security App Workflow]
       types: [completed]
-      branches: [testing]
+      branches: [DEV-569]
 
 
 permissions:
