@@ -28,5 +28,6 @@ jobs:
           label: Github Action Scan (testing-test / DEV-569)
           severity: low
           timeout: 360
+          path: ./
 
 
