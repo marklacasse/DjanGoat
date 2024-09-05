@@ -24,6 +24,9 @@ jobs:
           apiOrgId: ${{ secrets.CONTRAST__API__ORGANIZATION }}
           resourceGroup: CICD
           projectName: GithubA-DjanGoat2
-          checks: true
+          checks: false
+          label: Github Action Scan (testing-test / DEV-569)
+          severity: low
+          timeout: 360
 
 
