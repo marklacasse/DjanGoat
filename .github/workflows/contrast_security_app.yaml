@@ -28,10 +28,9 @@ jobs:
           orgId: ${{ vars.CONTRAST_GITHUB_APP_ORG_ID }}
           apiUrl: ${{ vars.CONTRAST_GITHUB_APP_TS_URL }}
           repoUrl: ${{ github.server_url }}/${{ github.repository }}
-          repoName: ${{ github.repository }}
+          repoName: testing  #${{ github.repository }}
           externalId: ${{ vars.CONTRAST_GITHUB_APP_ID }}
           command: fingerprint
-          repository-name: test
     outputs:
       fingerprint: ${{ steps.fingerprint.outputs.fingerprint }}
   analyze_dependencies:
