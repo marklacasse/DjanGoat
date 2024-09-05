@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Clone repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Run Contrast SCA Fingerprint
         id: fingerprint
         uses: 'Contrast-Security-OSS/contrast-sca-action@v2'
@@ -44,7 +44,7 @@ jobs:
           - ${{ fromJson(needs.fingerprint_repo.outputs.fingerprint) }}
     steps:
       - name: Clone repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Run Contrast SCA Audit
         uses: 'Contrast-Security-OSS/contrast-sca-action@v2'
         with:
