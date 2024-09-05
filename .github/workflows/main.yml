@@ -6,7 +6,7 @@ on:
     branches:
       - 'main'
   workflow_run:
-      workflows: [Scan with local scanner]
+      workflows: [Contrast Security App Workflow]
       types: [completed]
       branches: [testing]
 
