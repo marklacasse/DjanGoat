@@ -5,6 +5,11 @@ on:
   push:
     branches:
       - 'main'
+  workflow_run:
+      workflows: [Scan with local scanner]
+      types: [completed]
+      branches: [testing]
+
 
 permissions:
   contents: read
