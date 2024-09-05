@@ -25,7 +25,7 @@ jobs:
           resourceGroup: CICD-Test
           projectName: GithubA-DjanGoat2
           checks: false
-          label: Github Action Scan (testing-test / DEV-569)
+          label: "Github Action Scan (${{ github.actor }} / DEV-569)"
           severity: low
           timeout: 360
           path: "./"
