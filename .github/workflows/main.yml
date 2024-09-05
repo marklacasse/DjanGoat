@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: DEV-569
+          ref: testing
       - uses: Contrast-Security-OSS/contrast-local-scan-action@v1.0.2
         with:
           apiUrl: ${{ secrets.CONTRAST__API__URL }}
