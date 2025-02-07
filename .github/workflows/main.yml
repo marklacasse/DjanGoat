@@ -33,7 +33,7 @@ jobs:
           projectName: GithubA-DjanGoat2
           checks: false
           label: "Github Action Scan (${{ github.actor }} / Testing)"
-          severity: low
+          # severity: low
           timeout: 360
           path: "./"
 
