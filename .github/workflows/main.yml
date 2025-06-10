@@ -22,7 +22,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: DEV-569
-      - uses: Contrast-Security-OSS/contrast-local-scan-action@v1.0.6
+      - uses: marklacasse/contrast-local-scan-action@
+      Contrast-Security-OSS/contrast-local-scan-action@fixdownload
         with:
           apiUrl: ${{ secrets.CONTRAST__API__URL }}
           apiUserName: ${{ secrets.CONTRAST__API__USER_NAME }}
